@@ -1,0 +1,99 @@
+@import 'sass/helpers/variables';
+
+$float-left: right;
+$float-right: left;
+
+
+$text-left: right;
+$text-right: left;
+
+.header {
+    .logo {
+        @media #{$minMedium} {
+            float: $float-left;
+            text-align: $text-left;
+        }
+        .the-toggler {
+            right: auto;
+            left: 15px;
+        }
+    }
+    .navbar {
+        @media #{$minMedium} {
+            float: $float-left;
+        }
+        li {
+            float:$float-left;
+            @media #{$maxMobile} {
+                text-align: $text-left;
+             }
+
+        }
+    }
+}
+
+
+// Start Services
+.services {
+    .service-box {
+        @media #{$minMedium} {
+            float: $float-left;
+        }
+    }
+}
+// End Services
+// Start players
+.our-players {
+    .player-box {
+        @media #{$minSmal} {
+            float: $float-left;
+
+            }
+        @media #{$minMedium} {
+            text-align: $text-left;
+            }
+    }
+}
+// End players
+// Start Lorem
+.lorem-ipsum {
+    .lorem-box {
+        float: $float-left;
+    }
+}
+// End Lorem
+// Start Footer
+.footer {
+    .gallery, .info, .contact {
+        float: $float-left;
+    }
+    .gallery {
+        .img-box {
+            img {
+                @media #{$minSmal} {
+                    float: $float-left;
+                 }
+            }
+            .text {
+                @media #{$minSmal} {
+                    float: $float-left;
+                }
+            }
+        }
+    }
+    .info {
+        .text,
+        .author {
+            @media #{$minSmal} {
+                float: $float-left;
+            }
+        }
+        .author {
+            @media #{$minSmal} {
+                text-align: $text-right;
+            }
+        }
+       
+    }
+
+}
